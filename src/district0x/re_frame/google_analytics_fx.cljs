@@ -1,4 +1,4 @@
-(ns madvas.re-frame.google-analytics-fx
+(ns district0x.re-frame.google-analytics-fx
   (:require [re-frame.core :refer [reg-fx]]))
 
 (def ^:dynamic *enabled* true)

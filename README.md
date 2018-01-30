@@ -4,12 +4,11 @@ This is [re-frame](https://github.com/Day8/re-frame) library, which contains sev
 
 ## Installation
 ```clojure
-; Add to dependencies (requires re-frame >= v0.8.0)
-[madvas.re-frame/google-analytics-fx "0.1.0"]
+[district0x.re-frame/google-analytics-fx "1.0.0"]
 ```
 ```clojure
 (ns my.app
-  (:require [madvas.re-frame.google-analytics-fx])
+  (:require [district0x.re-frame.google-analytics-fx])
 ```
 Add Google Analytics snippet to your page. **Don't copy this one, may be outdated**
 ```html
@@ -26,9 +25,9 @@ ga('create', 'UA-XXXXX-Y', 'auto');
 ## Usage
 To enable or disable logging use:
 ```clojure
-(madvas.re-frame.google-analytics-fx/set-enabled! false)
+(district0x.re-frame.google-analytics-fx/set-enabled! false)
 ; To Disable while developing:
-(madvas.re-frame.google-analytics-fx/set-enabled! (not goog.DEBUG))
+(district0x.re-frame.google-analytics-fx/set-enabled! (not goog.DEBUG))
 ```
 
 Following effect handlers are available. Note, none of parameters is mandatory. `fields-object` always goes through `clj->js`
